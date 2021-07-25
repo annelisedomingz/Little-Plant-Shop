@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌿 Little Plant Shop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1,
+      h2 {
+        text-align: center;
+      }
+      body {
+        background: radial-gradient(
+          circle at 20% 20%,
+          rgb(43, 199, 188) 0%,
+          rgb(219, 249, 203) 72.9%
+        );
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+      }
+      h1 {
+        font-family: "Berkshire Swash", cursive;
+        color: rgba(20, 32, 56, 0.527);
+        font-size: 45px;
+        margin: 10px 10px 20px 10px;
+      }
+      hr {
+        width: 40px;
+        border: 3px solid rgb(66, 172, 140);
+        font-weight: bolder;
+      }
+
+      h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 25px;
+        color: rgb(66, 172, 140);
+        margin: 20px;
+      }
+      h3 {
+        font-family: "Berkshire Swash", cursive;
+        color: rgba(5, 8, 15, 0.527);
+        margin: 30px 50px 15px;
+      }
+      p {
+        font-size: 16px;
+        color: rgba(11, 17, 29, 0.527);
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 50px;
+        line-height: 1.5;
+      }
+      span {
+        color: rgb(66, 172, 140);
+      }
+      #box {
+        background-color: white;
+        width: 50%;
+        padding: 15px 10px 15px 10px;
+        display: block;
+        margin: 50px auto;
+        border-radius: 10px;
+        box-shadow: 2px 5px 7px rgb(0, 0, 0, 0.1);
+      }
+      img {
+        display: block;
+        margin: auto;
+        width: 90%;
+        border-radius: 10px;
+      }
+      h4 a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(66, 172, 140);
+        margin: 0 50px;
+      }
+
+      button {
+        display: block;
+        margin: 30px auto;
+        background-color: rgb(66, 172, 140);
+        border: 1px solid rgb(66, 172, 140);
+        padding: 18px 25px;
+        font-size: 16px;
+        color: white;
+        border-radius: 50px;
+        box-shadow: 2px 5px 7px rgb(0, 0, 0, 0.1);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        color: rgb(33, 105, 84);
+        border: 1px solid rgb(33, 105, 84);
+        background-color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <h1>Little <span>Plant</span> Shop</h1>
+      <hr />
+      <h2>What are succulents!</h2>
+      <img
+        src="https://lynchburgliving.com/wp-content/uploads/2018/06/ll-succulents.jpg"
+        alt
+      />
+      <h3><em>A little bit about the plants!</em></h3>
+      <p>
+        <strong>Succulent,</strong> any plant with thick fleshy tissues adapted
+        to water storage. Some succulents (e.g., cacti) store water only in the
+        stem and have no leaves or very small leaves, whereas others (e.g.,
+        agaves) store water mainly in the leaves. Most succulents have deep or
+        broad root systems and are native to either deserts or regions that have
+        a semiarid season. <br />
+        <br />Succulent plants are found in more than 60 plant families, with
+        members of Aizoaceae, Cactaceae, and Crassulaceae being dominantly
+        succulent. A number are cultivated as ornamentals and houseplants,
+        including Aloe, Echeveria, Kalanchoe, and others.
+      </p>
+      <h4>
+        <a
+          href="https://en.wikipedia.org/wiki/Succulent_plant"
+          target="blank"
+          More
+          Info
+          Here
+          >More Info Here</a
+        >
+      </h4>
+      <button>🌵 Buy A Succulent 🌵</button>
+    </div>
+    <script>
+      function plantButton() {
+        let name = prompt("Tell us your name");
+
+        if (name === "") {
+          alert("Please enter a name to continue.");
+        } else {
+          let email = prompt("What is your email");
+          alert("Thank you " + name + " will email you! 🌵");
+        }
+      }
+
+      let buyButton = document.querySelector("button");
+
+      buyButton.addEventListener("click", plantButton);
+    </script>
+  </body>
+</html>
